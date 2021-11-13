@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./first.js"></script>
+    <style>
+        ul li button{
+            
+            color: rebeccapurple;
+        }
+    </style>
 </head>
 <body>
     <h1>First Js Script</h1>
 
-    <input type="text" id="myinput">
+   <!-- <input type="text" id="myinput">-->
+
+    <input id="newToDo" type="text">
+    <button id="btnAdd">Add new todo</button>
+   
+
+    <ul id="todos">
+        <li>Make coffee <button onclick="handleDelete(event)">Delete</button></li>
+        <li>buy milk  <button onclick="handleDelete(event)">Delete</button></li>
+        <li>buy fruit  <button onclick="handleDelete(event)">Delete</button></li>
+    </ul>
     
     
-    <button onclick="btnclick()">Click </button>
-    <span id="output">Result will show here</span>
+  <!--  <button onclick="btnclick()">Click </button>-->
+  <!--  <span id="output">Result will show here</span>-->
 </body>
 </html>
